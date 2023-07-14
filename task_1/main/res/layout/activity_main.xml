@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#333333"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/title_text"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Basic Length And Weight Conversion"
+        android:textAlignment="center"
+        android:textColor="#CCCCCC"
+        android:textSize="20dp"
+        android:layout_marginTop="110dp"
+        android:padding="16dp"
+        android:textStyle="italic" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="271dp"
+        android:layout_gravity="center"
+        android:layout_marginVertical="20dp"
+        android:background="@drawable/extras"
+        android:orientation="vertical"
+        android:padding="30dp"
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="65dp"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <EditText
+                android:id="@+id/input"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:hint="Enter A Value"
+                android:textStyle="italic"
+                android:inputType="numberDecimal"></EditText>
+
+            <Spinner
+                android:id="@+id/input_spinner"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:entries="@array/units"
+                android:prompt="@string/input_prompt"></Spinner>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="65dp"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <EditText
+                android:id="@+id/output"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:hint="Answer"
+                android:textStyle="italic"
+                android:inputType="numberDecimal"></EditText>
+
+
+            <Spinner
+                android:id="@+id/output_spinner"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:entries="@array/units"
+                android:prompt="@string/output_prompt"></Spinner>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/convert"
+            android:layout_width="165dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:text="@string/convert"
+            android:textColor="@drawable/button_text"
+            />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#CCCCCC"
+        android:textAlignment="center"
+        android:textStyle="italic"
+        android:textSize="20dp"
+       />
+
+
+</LinearLayout>
+
+

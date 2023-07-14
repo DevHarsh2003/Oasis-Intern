@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Application2(Temperature Coneversion Between Units)</string>
+    <string name="input_prompt">Select Input Unit</string>
+    <string name="output_prompt">Select Output Unit</string>
+    <string name="convert">Convert</string>
+
+    <string-array name="units">
+        <item>Millimeters</item>
+        <item>Centimeters</item>
+        <item>Meters</item>
+        <item>Kilometers</item>
+
+        <item>Milligrams</item>
+        <item>Grams</item>
+        <item>Kilograms</item>
+    </string-array>
+</resources>
